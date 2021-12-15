@@ -1,0 +1,2 @@
+ethereum-service:
+  url: "http://192.168.229.128:8545/"
