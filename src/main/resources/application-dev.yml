@@ -1,2 +1,12 @@
 ethereum-service:
-  url: "http://192.168.229.128:8545/"
+  node-url: "http://192.168.229.169:8545/"
+  coinbase-file: "conf/UTC--2022-01-26T01-43-46.513248971Z--69fc4d797e31c13ad685bf1267e73327e32187fd"
+  coinbase-password: "123456"
+  chain-id: 128 #区块链ID
+  attempts-count: 30 #尝试轮询次数
+  frequency: 1000 #轮询的时间周期
+  contract-address: #合约地址
+    helloWorld: "0xc956cFc18B915D412f1Ec04c662891dd604B82F4"
+
+ipfs-service:
+  node: 192.168.229.169:5001

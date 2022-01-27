@@ -53,10 +53,17 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.web3j/core -->
         <dependency>
             <groupId>org.web3j</groupId>
             <artifactId>core</artifactId>
-            <version>4.8.4</version>
+            <version>4.8.9</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.web3j/codegen -->
+        <dependency>
+            <groupId>org.web3j</groupId>
+            <artifactId>codegen</artifactId>
+            <version>4.8.9</version>
         </dependency>
 
         <dependency>
@@ -81,6 +88,44 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.47</version>
         </dependency>
+
+        <!--ipfs-->
+        <dependency>
+            <groupId>com.github.ipfs</groupId>
+            <artifactId>java-ipfs-api</artifactId>
+            <version>v1.2.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/java-ipfs-api-v1.2.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.github.multiformats</groupId>
+            <artifactId>java-multibase</artifactId>
+            <version>v1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/java-multibase-v1.0.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.github.multiformats</groupId>
+            <artifactId>java-multiaddr</artifactId>
+            <version>v1.3.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/java-multiaddr-v1.3.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.github.multiformats</groupId>
+            <artifactId>java-multihash</artifactId>
+            <version>v1.1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/java-multihash-v1.1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.github.ipld</groupId>
+            <artifactId>java-cid</artifactId>
+            <version>v1.1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/java-cid-v1.1.0.jar</systemPath>
+        </dependency>
+
 
     </dependencies>
 
