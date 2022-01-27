@@ -14,6 +14,10 @@ public class SolidityGeneratorTest extends BaseTest{
 
     @Test
     public void compileSolFilesToJava() throws IOException {
+        /**
+         * 使用在线remix生成bin、abi文件
+         * https://remix.ethereum.org/
+         */
         String binFile;
         String abiFile;
         String tempDirPath = new File("src/test/java/").getAbsolutePath();
