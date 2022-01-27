@@ -91,4 +91,16 @@ public class ETHController {
         return Result.data(request.send().getTransactionCount());
     }
 
+    /**
+     * 获取节点版本
+     *
+     * @return
+     * @throws Exception
+     */
+    @GetMapping(value = "/getVersion")
+    public Result<?> getVersion() throws Exception {
+        Web3ClientVersion version = admin.web3ClientVersion().send();
+        return Result.data(version.getWeb3ClientVersion());
+    }
+
 }
